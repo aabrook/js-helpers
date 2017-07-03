@@ -1,5 +1,3 @@
-const { curry } = require('./')
-
 const bool = (f, t, c) => {
   if (typeof c === 'function') {
     return (...args) => {
@@ -15,5 +13,5 @@ const bool = (f, t, c) => {
 }
 
 module.exports = ({
-  bool: curry(bool)
+  bool
 })

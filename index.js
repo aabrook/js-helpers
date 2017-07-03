@@ -1,4 +1,5 @@
 const { prepend } = require('./strings')
+const { bool } = require('./bool')
 const id = (a) => a
 
 const log = (logger = console.log) => (fn) => (...args) => {
@@ -42,6 +43,7 @@ const fst = (...args) => args[0]
 
 module.exports = {
   $: curry($),
+  bool: curry(bool),
   compose,
   curry,
   filter: curry(filter),
